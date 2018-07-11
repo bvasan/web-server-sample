@@ -47,6 +47,7 @@ app.get('/bad', (req, res) => {
   })
 });
 
-app.listen(3000, () => {
-  console.log('The server is up on port 3000');
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`The server is up on port ${PORT}`);
 });
